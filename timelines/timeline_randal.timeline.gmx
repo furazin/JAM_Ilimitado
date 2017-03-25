@@ -104,8 +104,8 @@ dir = "izquierda";
           <argument>
             <kind>1</kind>
             <string>// Parar
-estado = estados_Randal.caminando;
-dir = "izquierda";
+estado = estados_Randal.parado;
+dir = "parado";
 </string>
           </argument>
         </arguments>
