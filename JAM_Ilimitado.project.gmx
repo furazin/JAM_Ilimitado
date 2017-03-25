@@ -68,6 +68,9 @@
       <script>scripts\Parado.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\Pistola_Fuente</font>
+  </fonts>
   <objects name="objects">
     <object>objects\Pared_OBJ</object>
     <objects name="Personajes">

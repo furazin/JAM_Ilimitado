@@ -28,6 +28,9 @@
             <string>/// Inicializar
 coger = false; // Variable que controla si se coge o no la escopeta
 
+mostrar_texto = true;
+
+
 
 
 </string>
@@ -62,6 +65,39 @@ coger = false; // Variable que controla si se coge o no la escopeta
         </arguments>
       </action>
     </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cuadro Hover - Comprobar si está el jugador cerca
+
+if (distance_to_object(Protagonista_OBJ)&lt;3 and mostrar_texto) { // Si estamos a distancia suficiente para mostrar el texto
+    draw_sprite(Texto_HUD_SPR,0,x-75,y-100);
+    draw_set_font(Pistola_Fuente);
+    draw_set_halign(fa_left);
+
+    draw_set_color(c_white);
+    draw_text(x-40,y-95,"Coger Pistola =&gt; X");
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="9" enumb="90">
       <action>
         <libid>1</libid>
@@ -82,8 +118,12 @@ coger = false; // Variable que controla si se coge o no la escopeta
             <string>if(coger) {
     coger = false;    
     y = y + 110;    
+    mostrar_texto = true;
 } else {
-    coger = true;
+    if (distance_to_object(Protagonista_OBJ)&lt;3) { 
+        coger = true;
+        mostrar_texto = false;    
+    }
 }
 </string>
           </argument>
