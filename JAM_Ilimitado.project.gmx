@@ -37,6 +37,7 @@
       <sprite>sprites\Fuego_SPR</sprite>
       <sprite>sprites\Jabon_SPR</sprite>
       <sprite>sprites\Nevera_SPR</sprite>
+      <sprite>sprites\Cerveza_SPR</sprite>
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\Texto_HUD_SPR</sprite>
@@ -53,6 +54,7 @@
       <sprite>sprites\Hierba_Suelo_SPR</sprite>
       <sprite>sprites\LlaveInglesa_Suelo_SPR</sprite>
       <sprite>sprites\Casa_SPR</sprite>
+      <sprite>sprites\sink_SPR</sprite>
     </sprites>
     <sprites name="Asesino">
       <sprite>sprites\Asesino_Andar_Izquierda_SPR</sprite>
@@ -96,6 +98,7 @@
       <object>objects\Jabon_OBJ</object>
       <object>objects\Fuego_OBJ</object>
       <object>objects\Nevera_OBJ</object>
+      <object>objects\Cerveza_OBJ</object>
     </objects>
     <objects name="Escenario">
       <object>objects\Suelo_OBJ</object>
@@ -110,6 +113,7 @@
       <object>objects\LlaveInglesa_Suelo_OBJ</object>
       <object>objects\Casa_OBJ</object>
       <object>objects\Fuego_OBJ_</object>
+      <object>objects\sink_OBJ</object>
     </objects>
   </objects>
   <timelines name="timelines">
