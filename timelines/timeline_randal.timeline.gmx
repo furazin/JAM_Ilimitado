@@ -32,7 +32,7 @@ if(!muerto){
     </event>
   </entry>
   <entry>
-    <step>950</step>
+    <step>1050</step>
     <event>
       <action>
         <libid>1</libid>
@@ -62,7 +62,7 @@ if(!muerto){
     </event>
   </entry>
   <entry>
-    <step>1000</step>
+    <step>1150</step>
     <event>
       <action>
         <libid>1</libid>
@@ -92,7 +92,7 @@ if(!muerto){
     </event>
   </entry>
   <entry>
-    <step>2000</step>
+    <step>2300</step>
     <event>
       <action>
         <libid>1</libid>
@@ -121,7 +121,7 @@ if(!muerto){
     </event>
   </entry>
   <entry>
-    <step>2500</step>
+    <step>4000</step>
     <event>
       <action>
         <libid>1</libid>
