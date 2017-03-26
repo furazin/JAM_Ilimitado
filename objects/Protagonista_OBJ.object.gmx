@@ -160,6 +160,18 @@ vh = 0; // velocidad horizontal
 v = 4; //  pixeles por fotograma
 depth = -y;
 
+// HUD Jabón
+if (distance_to_object(Jabon_OBJ)&lt;10) {  
+
+    Jabon_HUD_OBJ.visible = true;    
+}
+else {
+    Jabon_HUD_OBJ.visible = false;
+}
+
+// HUD 
+
+
 </string>
           </argument>
         </arguments>

@@ -52,7 +52,7 @@
       <sprite>sprites\Hacha_SPR</sprite>
     </sprites>
     <sprites name="HUD">
-      <sprite>sprites\Texto_HUD_SPR</sprite>
+      <sprite>sprites\Jabon_HUD</sprite>
     </sprites>
     <sprite>sprites\Coche</sprite>
     <sprites name="Escenario">
@@ -141,6 +141,7 @@
       <object>objects\Coche_OBJ</object>
       <object>objects\Tender_OBJ</object>
     </objects>
+    <object>objects\Jabon_HUD_OBJ</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_randal</timeline>
