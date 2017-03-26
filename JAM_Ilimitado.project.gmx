@@ -53,8 +53,8 @@
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\Jabon_HUD</sprite>
+      <sprite>sprites\Escopeta_HUD</sprite>
     </sprites>
-    <sprite>sprites\Coche</sprite>
     <sprites name="Escenario">
       <sprite>sprites\Suelo_SPR</sprite>
       <sprite>sprites\Nube_Grande_Oscura_SPR</sprite>
@@ -71,6 +71,7 @@
       <sprite>sprites\Arbol_SPR</sprite>
       <sprite>sprites\Cocina_SPR</sprite>
       <sprite>sprites\Tender_SPR</sprite>
+      <sprite>sprites\Coche</sprite>
     </sprites>
     <sprites name="Asesino">
       <sprite>sprites\Asesino_Andar_Izquierda_SPR</sprite>
@@ -160,6 +161,7 @@
       <object>objects\Tender_OBJ</object>
     </objects>
     <object>objects\Jabon_HUD_OBJ</object>
+    <object>objects\Escopeta_HUD_OBJ</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_randal</timeline>

@@ -170,7 +170,14 @@ else {
     Jabon_HUD_OBJ.visible = false;
 }
 
-// HUD 
+// HUD Escopeta
+if (distance_to_object(escopeta_OBJ)&lt;10) {  
+
+    Escopeta_HUD_OBJ.visible = true; 
+}
+else {
+    Escopeta_HUD_OBJ.visible = false;
+}
 
 
 </string>

@@ -103,6 +103,8 @@
     <instance objName="Tender_OBJ" x="1504" y="992" name="inst_7FF91744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Arbol_Delante_OBJ" x="4000" y="992" name="inst_61166F0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Chulu_OBJ" x="3712" y="992" name="inst_BD500DEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jabon_HUD_OBJ" x="1088" y="800" name="inst_DCD97B6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Escopeta_HUD_OBJ" x="2720" y="928" name="inst_A743FC6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="448" y="1056" w="16" h="16" xo="0" yo="0" id="10000006" name="inst_5114C7F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
