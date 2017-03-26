@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Inicialización
-image_speed = 0.05;
+image_speed = 0.07;
 
 enum estados_Randal {
     parado = Randal_Parado,
