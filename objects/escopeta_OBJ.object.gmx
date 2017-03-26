@@ -86,7 +86,6 @@ mostrar_texto = true;
 
 if (distance_to_object(Protagonista_OBJ)&lt;3 and mostrar_texto) { // Si estamos a distancia suficiente para mostrar el texto
 
-    show_debug_message("hola");
     draw_sprite(Texto_HUD_SPR,0,x-75,y-100);
     draw_set_font(Pistola_Fuente);
     draw_set_halign(fa_left);

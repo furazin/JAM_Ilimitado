@@ -36,6 +36,8 @@ enum estados_Randal {
 
 dir = "parado";
 estado = estados_Randal.caminando;
+dialogo = "prueba";
+mostrar_texto = true;
 
 // Timeline
 timeline_index  = timeline_randal;
@@ -139,6 +141,31 @@ if(estado == estados_Randal.caminando and (dir == "derecha" or dir == "izquierda
             audio_play_sound_at(paso5,Randal_OBJ.x,Randal_OBJ.y,0,100,500, 3, false, 2);
             break;    
     }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Dialogo
+
+if(mostrar_texto){ 
+    draw_text_colour(Randal_OBJ.x + 30, Randal_OBJ.y + 180, dialogo, c_black, c_black, c_black, c_black, 1);
+}
 </string>
           </argument>
         </arguments>
