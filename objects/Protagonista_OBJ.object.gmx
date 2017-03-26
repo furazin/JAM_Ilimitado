@@ -191,7 +191,8 @@ script_execute(estado);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(estado == estados_jugador.caminando and (dir == "derecha" or dir == "izquierda"))
+            <string>/// Sonido de los pasos
+if(estado == estados_jugador.caminando and (dir == "derecha" or dir == "izquierda"))
     if(!audio_is_playing(paso1) and !audio_is_playing(paso2) and!audio_is_playing(paso3) and!audio_is_playing(paso4) and !audio_is_playing(paso5))
     switch(irandom(4)) {
         case 0:
