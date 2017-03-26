@@ -91,7 +91,7 @@ if (distance_to_object(Randal_OBJ) &lt; 8 and distance_to_object(Casa_OBJ) &lt; 
     y = y + 110;    
     mostrar_texto = true;
     audio_play_sound(soltar_objeto, 10, false);
-} else {
+} else if(y &gt; Protagonista_OBJ.y - 50){
     if (distance_to_object(Protagonista_OBJ)&lt;3) { 
         coger = true;
         mostrar_texto = false;            
