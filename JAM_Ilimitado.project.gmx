@@ -34,6 +34,8 @@
       <sprite>sprites\Randal_Andar_Derecha_SPR</sprite>
       <sprite>sprites\Randal_Andar_Izquierda_SPR</sprite>
       <sprite>sprites\Randal_Muerte_SPR</sprite>
+      <sprite>sprites\Randal_Asfixia_SPR</sprite>
+      <sprite>sprites\Randal_Muerte2_SPR</sprite>
     </sprites>
     <sprites name="Protagonista">
       <sprite>sprites\Protagonista_Quieto_SPR</sprite>
@@ -90,6 +92,7 @@
       <script>scripts\Randal_Parado.gml</script>
       <script>scripts\Randal_Caminando.gml</script>
       <script>scripts\Randal_Muerte.gml</script>
+      <script>scripts\Randal_Asfixia.gml</script>
     </scripts>
     <scripts name="Asesino">
       <script>scripts\Asesino_Parado.gml</script>

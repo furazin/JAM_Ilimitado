@@ -31,7 +31,8 @@ image_speed = 0.07;
 enum estados_Randal {
     parado = Randal_Parado,
     caminando = Randal_Caminando,
-    muerto = Randal_Muerte
+    muerto = Randal_Muerte,
+    asfixia = Randal_Asfixia
 }
 
 dir = "parado";
@@ -40,6 +41,7 @@ dialogo = "prueba";
 mostrar_texto = true;
 caminar_speed = 2;
 muerto = false;
+aerosol = false;
 
 // Timeline
 timeline_index  = timeline_randal;
@@ -104,6 +106,13 @@ switch(dir) {
         else 
             image_speed = 0.5; // Cambiamos la velocidad cuando estamos cayendo muertos
         break;
+    case "muerte2":
+        sprite_index = Randal_Muerte2_SPR;
+        muerto = true;
+        break;
+    case "asfixia":
+        sprite_index = Randal_Asfixia_SPR;
+        break; 
 
 }
 </string>

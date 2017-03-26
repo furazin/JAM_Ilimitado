@@ -64,7 +64,7 @@ randal = false;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Fuego_OBJ">
+    <event eventtype="4" ename="Arbol_Detras_OBJ">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -86,6 +86,7 @@ randal = false;
     y = y + 110;    
     mostrar_texto = true;
     audio_play_sound(soltar_objeto, 10, false);
+    Randal_OBJ.estado = estados_Randal.asfixia;
 }
 </string>
           </argument>
