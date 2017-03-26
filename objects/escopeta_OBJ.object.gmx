@@ -86,12 +86,20 @@ mostrar_texto = true;
 
 if (distance_to_object(Protagonista_OBJ)&lt;3 and mostrar_texto) { // Si estamos a distancia suficiente para mostrar el texto
 
-    draw_sprite(Texto_HUD_SPR,0,x-75,y-100);
+    //draw_sprite(Texto_HUD_SPR,0,x-75,y-100);
+    //draw_set_font(Pistola_Fuente);
+    //draw_set_halign(fa_left);
+
+    //draw_set_color(c_white);
+    //draw_text(x-40,y-95,"Take the gun -&gt; Z");
+    
+    draw_sprite(Texto_HUD_SPR,0,980,738);
     draw_set_font(Pistola_Fuente);
     draw_set_halign(fa_left);
 
     draw_set_color(c_white);
-    draw_text(x-40,y-95,"Take the gun -&gt; Z");
+    draw_text(1000,738,"¿Coger la pistola?...(Z)");
+    
 }
 
 </string>
