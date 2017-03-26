@@ -88,6 +88,8 @@
     </sprites>
     <sprites name="Oso">
       <sprite>sprites\Oso_Quieto_SPR</sprite>
+      <sprite>sprites\Oso_Andar_Derecha_SPR</sprite>
+      <sprite>sprites\Oso_Andar_Izquierda_SPR</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -118,6 +120,12 @@
       <script>scripts\Chulu_Meando.gml</script>
       <script>scripts\Chulu_Sentado.gml</script>
     </scripts>
+    <scripts name="Oso">
+      <script>scripts\Oso_Parado.gml</script>
+      <script>scripts\Oso_Caminando.gml</script>
+      <script>scripts\Oso_Muerte.gml</script>
+      <script>scripts\Oso_Ataque.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Pistola_Fuente</font>
@@ -130,6 +138,7 @@
       <object>objects\Asesino_OBJ</object>
       <object>objects\Chad_OBJ</object>
       <object>objects\Chulu_OBJ</object>
+      <object>objects\Oso_OBJ</object>
     </objects>
     <objects name="Items">
       <object>objects\escopeta_OBJ</object>
@@ -165,6 +174,7 @@
     <timeline>timelines\timeline_randal</timeline>
     <timeline>timelines\timeline_asesino</timeline>
     <timeline>timelines\timeline_chulu</timeline>
+    <timeline>timelines\timeline_oso</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\Escenario</room>
