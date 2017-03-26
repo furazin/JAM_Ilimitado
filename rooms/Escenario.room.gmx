@@ -60,11 +60,11 @@
     <instance objName="Nube_Mediana_Oscura_OBJ" x="1856" y="288" name="inst_93085AA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="LlaveInglesa_Suelo_OBJ" x="1248" y="1056" name="inst_E378D78E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Hierba_Suelo_OBJ" x="2144" y="1024" name="inst_54444D81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Suelo_OBJ" x="1792" y="992" name="inst_01B2214F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Suelo_OBJ" x="1760" y="992" name="inst_01B2214F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Suelo_OBJ" x="0" y="992" name="inst_6E7BAD44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Casa_OBJ" x="32" y="992" name="inst_247B7151" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Suelo_OBJ" x="3584" y="992" name="inst_4F0AD65F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Suelo_OBJ" x="5376" y="992" name="inst_0A167052" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Suelo_OBJ" x="3552" y="992" name="inst_4F0AD65F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Suelo_OBJ" x="5344" y="992" name="inst_0A167052" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Suelo_OBJ" x="7168" y="992" name="inst_93AD9987" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pared_OBJ" x="160" y="640" name="inst_6A16C345" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pared_OBJ" x="160" y="672" name="inst_4EDF7A6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -96,11 +96,13 @@
     <instance objName="Arbol_Delante_OBJ" x="4160" y="992" name="inst_C2134253" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Arbol_Detras_OBJ" x="2880" y="992" name="inst_B5703546" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Arbol_Detras_OBJ" x="4256" y="992" name="inst_EEF45AD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Arbol_Detras_OBJ" x="4544" y="992" name="inst_AE4D1244" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Arbol_Detras_OBJ" x="4768" y="992" name="inst_17158F12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Arbol_Detras_OBJ" x="4416" y="992" name="inst_AE4D1244" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Arbol_Detras_OBJ" x="4672" y="992" name="inst_17158F12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Cocina_OBJ" x="672" y="992" name="inst_1642D740" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Coche_OBJ" x="2016" y="992" name="inst_592CF7C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tender_OBJ" x="1504" y="992" name="inst_7FF91744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Arbol_Delante_OBJ" x="4000" y="992" name="inst_61166F0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Chulu_OBJ" x="3712" y="992" name="inst_BD500DEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="448" y="1056" w="16" h="16" xo="0" yo="0" id="10000006" name="inst_5114C7F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

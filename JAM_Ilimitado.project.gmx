@@ -84,6 +84,7 @@
       <sprite>sprites\Chulu_Andar_Derecha_SPR</sprite>
       <sprite>sprites\Chulu_Andar_Izquierda_SPR</sprite>
       <sprite>sprites\Chulu_Muerte_SPR</sprite>
+      <sprite>sprites\Chulu_Meando_SPR</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

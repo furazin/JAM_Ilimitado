@@ -36,6 +36,7 @@ enum estados_jugador {
     fregando = Prota_Fregando
 }
 
+objeto = "";
 contador = 0;
 dialogo = "prueba";
 mostrar_texto = true;
