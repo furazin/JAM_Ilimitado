@@ -31,8 +31,7 @@ image_speed = 0.07;
 enum estados_Asesino {
     parado = Asesino_Parado,
     caminando = Asesino_Caminando,
-    muerto = Asesino_Muerte,
-    cuchillada = Asesino_Acuchillar
+    muerto = Asesino_Muerte
 }
 
 dir = "parado";

@@ -6,12 +6,12 @@ if (image_index == 0) image_index++;
 // Dependiendo de la variable "dir", cargamos su sprite correspondiente
 switch(dir) {
     case "izquierda":
-        sprite_index = Randal_Andar_Izquierda_SPR;
+        sprite_index = Asesino_Andar_Izquierda_SPR;
         break;
     case "derecha" :
-        sprite_index = Randal_Andar_Derecha_SPR;
+        sprite_index = Asesino_Andar_Derecha_SPR;
         break;   
     case "parado":
-        sprite_index = Randal_Quieto_SPR;
+        sprite_index = Asesino_Quieto_SPR;
         break;
 }

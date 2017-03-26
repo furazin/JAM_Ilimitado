@@ -87,6 +87,11 @@
       <script>scripts\Randal_Caminando.gml</script>
       <script>scripts\Randal_Muerte.gml</script>
     </scripts>
+    <scripts name="Asesino">
+      <script>scripts\Asesino_Parado.gml</script>
+      <script>scripts\Asesino_Caminando.gml</script>
+      <script>scripts\Asesino_Muerte.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Pistola_Fuente</font>
