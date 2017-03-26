@@ -29,6 +29,7 @@
 coger = false; // Variable que controla si se coge o no el hacha
 chad_coger = false;
 mostrar_texto = true;
+depth = -y;
 
 
 

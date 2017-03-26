@@ -74,6 +74,9 @@
       <sprite>sprites\Cocina_SPR</sprite>
       <sprite>sprites\Tender_SPR</sprite>
       <sprite>sprites\Coche</sprite>
+      <sprite>sprites\Almacen_SPR</sprite>
+      <sprite>sprites\Mesa_SPR</sprite>
+      <sprite>sprites\Cama_SPR</sprite>
     </sprites>
     <sprites name="Asesino">
       <sprite>sprites\Asesino_Andar_Izquierda_SPR</sprite>
@@ -172,6 +175,9 @@
       <object>objects\Cocina_OBJ</object>
       <object>objects\Coche_OBJ</object>
       <object>objects\Tender_OBJ</object>
+      <object>objects\Almacen_OBJ</object>
+      <object>objects\Mesa_OBJ</object>
+      <object>objects\Cama_OBJ</object>
     </objects>
     <object>objects\Jabon_HUD_OBJ</object>
     <object>objects\Escopeta_HUD_OBJ</object>
