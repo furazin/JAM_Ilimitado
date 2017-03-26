@@ -122,6 +122,11 @@ if (distance_to_object(Oso_OBJ)&lt;50 and coger = true) {
     Oso_OBJ.dir = "muerte";
     if(!audio_is_playing(escopeta)) audio_play_sound(escopeta, 10, false);
 }
+if (distance_to_object(Asesino_OBJ)&lt;50 and coger = true) {
+    Asesino_OBJ.estado = estados_Asesino.muerto;
+    Asesino_OBJ.dir = "muerte";
+    if(!audio_is_playing(escopeta)) audio_play_sound(escopeta, 10, false);
+}
 </string>
           </argument>
         </arguments>
