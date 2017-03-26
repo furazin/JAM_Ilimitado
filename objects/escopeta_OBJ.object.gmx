@@ -64,8 +64,6 @@ mostrar_texto = true;
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -84,16 +82,14 @@ mostrar_texto = true;
             <kind>1</kind>
             <string>/// Cuadro Hover - Comprobar si está el jugador cerca
 
-if (distance_to_object(Protagonista_OBJ)&lt;3 and mostrar_texto) { // Si estamos a distancia suficiente para mostrar el texto
-
-    draw_sprite(Texto_HUD_SPR,0,x-75,y-100);
+if (mostrar_texto) { // Si estamos a distancia suficiente para mostrar el texto
+    draw_sprite(Texto_HUD_SPR,0,x,y);
+    show_debug_message(x + y);
     draw_set_font(Pistola_Fuente);
     draw_set_halign(fa_left);
-
     draw_set_color(c_white);
-    draw_text(x-40,y-95,"Take the gun -&gt; Z");
+    draw_text(x,y,"");
 }
-
 </string>
           </argument>
         </arguments>
@@ -151,7 +147,7 @@ if (distance_to_object(Protagonista_OBJ)&lt;3 and mostrar_texto) { // Si estamos
           <argument>
             <kind>1</kind>
             <string>/// Disparo tras pulsar la tecla X y estar cerca
-if (distance_to_object(Randal_OBJ)&lt;400) {
+if (distance_to_object(Randal_OBJ)&lt;400 and coger = true) {
     Randal_OBJ.estado = estados_Randal.muerto;
     Randal_OBJ.dir = "muerte";
     show_debug_message("hola");
