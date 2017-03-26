@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Inicializar
-coger = false; // Variable que controla si se coge o no la escopeta
-
+coger = false; // Variable que controla si se coge o no la cerveza
+coger_chulu = false;
 mostrar_texto = true;
 randal = false;
 
@@ -57,6 +57,9 @@ randal = false;
             <string>if(coger) {
     x = Randal_OBJ.x + 30;
     y = Randal_OBJ.y - 110;
+} if(coger_chulu) {
+    x = Chulu_OBJ.x + 30;
+    y = Chulu_OBJ.y - 110;
 }
 
 </string>
@@ -81,12 +84,78 @@ randal = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(coger){
+            <string>if(coger and !coger_chulu){
     coger = false;    
     y = y + 110;    
     mostrar_texto = true;
     audio_play_sound(soltar_objeto, 10, false);
     Randal_OBJ.estado = estados_Randal.asfixia;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Fuego_OBJ_">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(coger_chulu and !coger){
+    coger_chulu = false;    
+    y = y + 110;    
+    mostrar_texto = true;
+    audio_play_sound(soltar_objeto, 10, false);
+    Chulu_OBJ.estado = estados_Chulu.meando;
+    Chulu_OBJ.dir = "meando";
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Chulu_OBJ">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!coger_chulu and !coger){
+        coger_chulu = true;
+        mostrar_texto = false;            
+        audio_play_sound(coger_objeto, 10, false);
+}
+if(coger_chulu){
+    if(distance_to_object(Fuego_OBJ_)&lt;100 and !coger){
+        coger = true;
+        coger_chulu = false;
+        y = y + 110;    
+        mostrar_texto = true;
+        audio_play_sound(soltar_objeto, 10, false);
+    }
 }
 </string>
           </argument>

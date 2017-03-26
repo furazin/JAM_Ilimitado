@@ -16,7 +16,7 @@
     <sound>sound\soltar_objeto</sound>
     <sounds name="Gritos">
       <sound>sound\grito_asesino</sound>
-      <sound>sound\grito_chino</sound>
+      <sound>sound\grito_chulu</sound>
       <sound>sound\grito_brad</sound>
       <sound>sound\grito_randal</sound>
       <sound>sound\grito_beth</sound>
@@ -79,6 +79,16 @@
       <sprite>sprites\Asesino_Asesinar_SPR</sprite>
       <sprite>sprites\Asesino_Quieto_SPR</sprite>
     </sprites>
+    <sprites name="Chulu">
+      <sprite>sprites\Chulu_Quieto_SPR</sprite>
+      <sprite>sprites\Chulu_Andar_Derecha_SPR</sprite>
+      <sprite>sprites\Chulu_Andar_Izquierda_SPR</sprite>
+      <sprite>sprites\Chulu_Muerte_SPR</sprite>
+      <sprite>sprites\Chulu_Meando_SPR</sprite>
+    </sprites>
+    <sprites name="Oso">
+      <sprite>sprites\Oso_Quieto_SPR</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\cielo</background>
@@ -101,6 +111,13 @@
       <script>scripts\Asesino_Caminando.gml</script>
       <script>scripts\Asesino_Muerte.gml</script>
     </scripts>
+    <scripts name="Chulu">
+      <script>scripts\Chulu_Parado.gml</script>
+      <script>scripts\Chulu_Caminando.gml</script>
+      <script>scripts\Chulu_Muerte.gml</script>
+      <script>scripts\Chulu_Meando.gml</script>
+      <script>scripts\Chulu_Sentado.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Pistola_Fuente</font>
@@ -112,6 +129,7 @@
       <object>objects\Randal_OBJ</object>
       <object>objects\Asesino_OBJ</object>
       <object>objects\Chad_OBJ</object>
+      <object>objects\Chulu_OBJ</object>
     </objects>
     <objects name="Items">
       <object>objects\escopeta_OBJ</object>
@@ -146,6 +164,7 @@
   <timelines name="timelines">
     <timeline>timelines\timeline_randal</timeline>
     <timeline>timelines\timeline_asesino</timeline>
+    <timeline>timelines\timeline_chulu</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\Escenario</room>
