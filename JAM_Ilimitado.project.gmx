@@ -34,6 +34,7 @@
     </sprites>
     <sprites name="Items">
       <sprite>sprites\escopeta_SPR</sprite>
+      <sprite>sprites\Fuego_SPR</sprite>
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\Texto_HUD_SPR</sprite>
@@ -50,6 +51,11 @@
       <sprite>sprites\Hierba_Suelo_SPR</sprite>
       <sprite>sprites\LlaveInglesa_Suelo_SPR</sprite>
       <sprite>sprites\Casa_SPR</sprite>
+    </sprites>
+    <sprites name="Asesino">
+      <sprite>sprites\Asesino_Andar_Izquierda_SPR</sprite>
+      <sprite>sprites\Asesino_Andar_Derecha_SPR</sprite>
+      <sprite>sprites\Muerte_Asesino_SPR</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -80,10 +86,12 @@
     <objects name="Personajes">
       <object>objects\Protagonista_OBJ</object>
       <object>objects\Randal_OBJ</object>
+      <object>objects\Asesino_OBJ</object>
     </objects>
     <objects name="Items">
       <object>objects\escopeta_OBJ</object>
       <object>objects\Jabon_OBJ</object>
+      <object>objects\Fuego_OBJ</object>
     </objects>
     <objects name="Escenario">
       <object>objects\Suelo_OBJ</object>
@@ -98,6 +106,7 @@
       <object>objects\LlaveInglesa_Suelo_OBJ</object>
       <object>objects\Casa_OBJ</object>
     </objects>
+    <object>objects\Fuego_OBJ_</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_randal</timeline>
