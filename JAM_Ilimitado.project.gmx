@@ -50,8 +50,6 @@
       <sprite>sprites\Hierba_Suelo_SPR</sprite>
       <sprite>sprites\LlaveInglesa_Suelo_SPR</sprite>
       <sprite>sprites\Casa_SPR</sprite>
-      <sprite>sprites\Lago_Bajo_SPR</sprite>
-      <sprite>sprites\Lago_Alto_SPR</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -98,8 +96,6 @@
       <object>objects\Hierba_Suelo_OBJ</object>
       <object>objects\LlaveInglesa_Suelo_OBJ</object>
       <object>objects\Casa_OBJ</object>
-      <object>objects\Lago_Bajo_OBJ</object>
-      <object>objects\Lago_Alto_OBJ</object>
     </objects>
   </objects>
   <timelines name="timelines">
