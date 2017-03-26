@@ -113,6 +113,7 @@ randal = false;
         coger = true;
         mostrar_texto = false;            
         audio_play_sound(coger_objeto, 10, false);
+        depth = -4000;
 }
 </string>
           </argument>

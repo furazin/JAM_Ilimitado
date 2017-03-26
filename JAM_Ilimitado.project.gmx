@@ -65,6 +65,7 @@
       <sprite>sprites\Casa_SPR</sprite>
       <sprite>sprites\sink_SPR</sprite>
       <sprite>sprites\Arbol_SPR</sprite>
+      <sprite>sprites\Cocina_SPR</sprite>
     </sprites>
     <sprites name="Asesino">
       <sprite>sprites\Asesino_Andar_Izquierda_SPR</sprite>
@@ -129,6 +130,7 @@
       <object>objects\sink_OBJ</object>
       <object>objects\Arbol_Delante_OBJ</object>
       <object>objects\Arbol_Detras_OBJ</object>
+      <object>objects\Cocina_OBJ</object>
     </objects>
   </objects>
   <timelines name="timelines">
