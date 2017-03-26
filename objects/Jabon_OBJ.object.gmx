@@ -3,7 +3,7 @@
   <spriteName>Jabon_SPR</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-500</depth>
+  <depth>-10000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -59,7 +59,7 @@ mostrar_texto = true;
     x = Protagonista_OBJ.x + 30;
     y = Protagonista_OBJ.y - 110;
 } else
-if (distance_to_object(Randal_OBJ) &lt; 8 and distance_to_object(Casa_OBJ) &lt; 8) {
+if (distance_to_object(Randal_OBJ) &lt; 8 and distance_to_object(Casa_OBJ) &lt; 8 and y &gt; Protagonista_OBJ.y - 50) {
     Randal_OBJ.estado = estados_Randal.muerto;
     Randal_OBJ.dir = "muerte";
 }

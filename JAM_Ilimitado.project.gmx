@@ -14,6 +14,13 @@
     </sounds>
     <sound>sound\coger_objeto</sound>
     <sound>sound\soltar_objeto</sound>
+    <sounds name="Gritos">
+      <sound>sound\grito_asesino</sound>
+      <sound>sound\grito_chino</sound>
+      <sound>sound\grito_brad</sound>
+      <sound>sound\grito_randal</sound>
+      <sound>sound\grito_beth</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\bloque_azul_SPR</sprite>

@@ -93,7 +93,9 @@ switch(dir) {
         break;
     case "muerte":
         sprite_index = Randal_Muerte_SPR;
-        if (image_index &gt; 6) {
+        if(image_index &lt; 2) {
+            if(!audio_is_playing(grito_randal))audio_play_sound(grito_randal, 10, false);
+        } else if (image_index &gt; 6) {
             image_speed = 0; // Cuando se acaba la animación de morir la paramos
         }
         else 
@@ -131,26 +133,6 @@ if (mostrar_texto) { // Si estamos a distancia suficiente para mostrar el texto
     draw_text(Randal_OBJ.x+30,Randal_OBJ.y-150,dialogo);
 }
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
