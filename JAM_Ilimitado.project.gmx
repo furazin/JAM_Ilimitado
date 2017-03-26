@@ -46,6 +46,7 @@
       <sprite>sprites\Jabon_SPR</sprite>
       <sprite>sprites\Nevera_SPR</sprite>
       <sprite>sprites\Cerveza_SPR</sprite>
+      <sprite>sprites\Hacha_SPR</sprite>
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\Texto_HUD_SPR</sprite>
@@ -100,6 +101,7 @@
       <object>objects\Protagonista_OBJ</object>
       <object>objects\Randal_OBJ</object>
       <object>objects\Asesino_OBJ</object>
+      <object>objects\Chad_OBJ</object>
     </objects>
     <objects name="Items">
       <object>objects\escopeta_OBJ</object>
@@ -107,6 +109,7 @@
       <object>objects\Fuego_OBJ</object>
       <object>objects\Nevera_OBJ</object>
       <object>objects\Cerveza_OBJ</object>
+      <object>objects\Hacha_OBJ</object>
     </objects>
     <objects name="Escenario">
       <object>objects\Suelo_OBJ</object>

@@ -91,6 +91,7 @@
     <instance objName="LlaveInglesa_Suelo_OBJ" x="2560" y="1088" name="inst_574446AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Calavera_Suelo_OBJ" x="3392" y="1088" name="inst_F93DF9A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="LlaveInglesa_Suelo_OBJ" x="3840" y="1056" name="inst_B6FA920B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hacha_OBJ" x="1664" y="800" name="inst_D2CA67F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="448" y="1056" w="16" h="16" xo="0" yo="0" id="10000006" name="inst_5114C7F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
