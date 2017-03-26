@@ -91,8 +91,11 @@ switch(dir) {
         break;
     case "muerte":
         sprite_index = Randal_Muerte_SPR;
-        if (image_index == 6)
-            image_speed = 0;
+        if (image_index &gt; 6) {
+            image_speed = 0; // Cuando se acaba la animación de morir la paramos
+        }
+        else 
+            image_speed = 0.3; // Cambiamos la velocidad cuando estamos cayendo muertos
         break;
 
 }
