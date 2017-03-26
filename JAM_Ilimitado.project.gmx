@@ -22,6 +22,8 @@
       <sound>sound\grito_beth</sound>
     </sounds>
     <sound>sound\fuego_sound</sound>
+    <sound>sound\escopeta</sound>
+    <sound>sound\music</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\bloque_azul_SPR</sprite>
@@ -91,6 +93,8 @@
       <sprite>sprites\Oso_Quieto_SPR</sprite>
       <sprite>sprites\Oso_Andar_Derecha_SPR</sprite>
       <sprite>sprites\Oso_Andar_Izquierda_SPR</sprite>
+      <sprite>sprites\Oso_Muerte_SPR</sprite>
+      <sprite>sprites\Oso_Atacar_SPR</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

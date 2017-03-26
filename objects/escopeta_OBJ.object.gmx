@@ -117,10 +117,10 @@ mostrar_texto = true;
           <argument>
             <kind>1</kind>
             <string>/// Disparo tras pulsar la tecla X y estar cerca
-if (distance_to_object(Randal_OBJ)&lt;400 and coger = true) {
-    Randal_OBJ.estado = estados_Randal.muerto;
-    Randal_OBJ.dir = "muerte";
-    show_debug_message("hola");
+if (distance_to_object(Oso_OBJ)&lt;50 and coger = true) {
+    Oso_OBJ.estado = estados_Oso.muerto;
+    Oso_OBJ.dir = "muerte";
+    if(!audio_is_playing(escopeta)) audio_play_sound(escopeta, 10, false);
 }
 </string>
           </argument>

@@ -32,7 +32,7 @@ enum estados_Oso  {
     parado = Oso_Parado,
     caminando = Oso_Caminando,
     muerto = Oso_Muerte,
-    asfixia = Oso_Ataque
+    atacar = Oso_Ataque
 }
 
 dir = "parado";
@@ -90,7 +90,7 @@ switch(dir) {
         break;
     case "muerte":
         sprite_index = Oso_Muerte_SPR;
-        if(image_index &lt; 4) {
+        if(image_index &lt; 2) {
             if(!audio_is_playing(grito_asesino)) audio_play_sound(grito_asesino, 10, false);
         } else if (image_index &gt; 6) {
             muerto = true;
@@ -100,7 +100,7 @@ switch(dir) {
             image_speed = 0.5; // Cambiamos la velocidad cuando estamos cayendo muertos
         break;
     case "ataque":
-       // sprite_index = Oso_Ataque_SPR;
+        sprite_index = Oso_Atacar_SPR;
         break; 
 
 }
@@ -166,8 +166,14 @@ if(estado == estados_Randal.caminando and (dir == "derecha" or dir == "izquierda
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Chulu_OBJ.estado = "muerto";
+            <string>if(!Chulu_OBJ.muerte){
+    estado = estados_Oso.atacar;
+    dir = "ataque";
+}
+
+Chulu_OBJ.estado = "muerto";
 Chulu_OBJ.direccion = "muerte";
+
 </string>
           </argument>
         </arguments>
