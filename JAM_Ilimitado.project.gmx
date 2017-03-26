@@ -86,6 +86,9 @@
       <sprite>sprites\Chulu_Muerte_SPR</sprite>
       <sprite>sprites\Chulu_Meando_SPR</sprite>
     </sprites>
+    <sprites name="Oso">
+      <sprite>sprites\Oso_Quieto_SPR</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\cielo</background>

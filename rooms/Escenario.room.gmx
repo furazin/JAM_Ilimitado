@@ -82,7 +82,7 @@
     <instance objName="Nevera_OBJ" x="704" y="992" name="inst_1D9EEA04" locked="0" code="" scaleX="0.620000004768372" scaleY="0.819999992847443" colour="4294967295" rotation="0"/>
     <instance objName="Cerveza_OBJ" x="768" y="832" name="inst_765E0E80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Hierba_Suelo_OBJ" x="3520" y="1024" name="inst_D86E09DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fuego_OBJ_" x="3776" y="992" name="inst_8A074216" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Fuego_OBJ_" x="3808" y="992" name="inst_8A074216" locked="0" code="" scaleX="0.959999978542328" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Calavera_Suelo_OBJ" x="4352" y="1076" name="inst_E41D29CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Calavera_Suelo_OBJ" x="1984" y="1088" name="inst_EF6EBB1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Calavera_Suelo_OBJ" x="3008" y="1076" name="inst_7AA6D163" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
