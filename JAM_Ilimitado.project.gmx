@@ -21,6 +21,7 @@
       <sound>sound\grito_randal</sound>
       <sound>sound\grito_beth</sound>
     </sounds>
+    <sound>sound\fuego_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\bloque_azul_SPR</sprite>

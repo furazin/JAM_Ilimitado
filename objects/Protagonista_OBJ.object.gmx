@@ -3,7 +3,7 @@
   <spriteName>Protagonista_Quieto_SPR</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-5000</depth>
+  <depth>-10000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -238,12 +238,12 @@ if(estado == estados_jugador.caminando and (dir == "derecha" or dir == "izquierd
             <kind>1</kind>
             <string>/// Dialogo
 
-if (mostrar_texto) { // Si estamos a distancia suficiente para mostrar el texto
-    draw_sprite(Texto_HUD_SPR,0,Protagonista_OBJ.x,Protagonista_OBJ.y-150);
+if (mostrar_texto) { 
+    draw_sprite(Texto_HUD_SPR,0,300,900);
     draw_set_font(Pistola_Fuente);
     draw_set_halign(fa_left);
     draw_set_color(c_white);
-    draw_text(Protagonista_OBJ.x+30,Protagonista_OBJ.y-150,dialogo);
+    draw_text(330,900,dialogo);
 }
 </string>
           </argument>
