@@ -54,6 +54,7 @@
     <sprites name="HUD">
       <sprite>sprites\Texto_HUD_SPR</sprite>
     </sprites>
+    <sprite>sprites\Coche</sprite>
     <sprites name="Escenario">
       <sprite>sprites\Suelo_SPR</sprite>
       <sprite>sprites\Nube_Grande_Oscura_SPR</sprite>
@@ -69,6 +70,7 @@
       <sprite>sprites\sink_SPR</sprite>
       <sprite>sprites\Arbol_SPR</sprite>
       <sprite>sprites\Cocina_SPR</sprite>
+      <sprite>sprites\Tender_SPR</sprite>
     </sprites>
     <sprites name="Asesino">
       <sprite>sprites\Asesino_Andar_Izquierda_SPR</sprite>
@@ -150,6 +152,8 @@
       <object>objects\Arbol_Delante_OBJ</object>
       <object>objects\Arbol_Detras_OBJ</object>
       <object>objects\Cocina_OBJ</object>
+      <object>objects\Coche_OBJ</object>
+      <object>objects\Tender_OBJ</object>
     </objects>
   </objects>
   <timelines name="timelines">
