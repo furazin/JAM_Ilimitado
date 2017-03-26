@@ -34,7 +34,7 @@
     </sprites>
     <sprites name="Items">
       <sprite>sprites\escopeta_SPR</sprite>
-      <sprite>sprites\Fuego_SPR</sprite>
+      <sprite>sprites\jabon_SPR</sprite>
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\Texto_HUD_SPR</sprite>
