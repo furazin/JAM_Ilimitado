@@ -38,6 +38,7 @@ dir = "parado";
 estado = estados_Randal.caminando;
 dialogo = "prueba";
 mostrar_texto = true;
+caminar_speed = 2;
 
 // Timeline
 timeline_index  = timeline_randal;
@@ -75,15 +76,16 @@ timeline_loop = false;
             <string>// La animacion completa del personaje empieza desde que esta parado.
 // Entonces al andar se repite el sprite de inicio, con lo que no es un andar fluido.
 // Para esto, cuando empiece la animacion se pasa al siguiente sprite.
-if (image_index == 0) image_index++; 
 
 /// Inicialización de movimiento
 switch(dir) {
     case "izquierda":
+        if (image_index == 0) image_index++; 
         sprite_index = Randal_Andar_Izquierda_SPR;
         Mover_Izquierda();
         break;
     case "derecha" :
+        if (image_index == 0) image_index++; 
         sprite_index = Randal_Andar_Derecha_SPR;
         Mover_Derecha();
         break;   

@@ -7,7 +7,145 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Inicialización
+image_speed = 0.07;
+
+enum estados_Asesino {
+    parado = Asesino_Parado,
+    caminando = Asesino_Caminando,
+    muerto = Asesino_Muerte,
+    cuchillada = Asesino_Acuchillar
+}
+
+dir = "parado";
+estado = estados_Asesino.caminando;
+dialogo = "prueba";
+mostrar_texto = true;
+caminar_speed = 4;
+acuchillar = false;
+
+// Timeline
+timeline_index  = timeline_asesino;
+timeline_position = 0;
+timeline_running = true;
+timeline_loop = false;
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// La animacion completa del personaje empieza desde que esta parado.
+// Entonces al andar se repite el sprite de inicio, con lo que no es un andar fluido.
+// Para esto, cuando empiece la animacion se pasa al siguiente sprite.
+
+
+/// Inicialización de movimiento
+switch(dir) {
+    case "izquierda":
+        if (image_index == 0) image_index++; 
+        sprite_index = Asesino_Andar_Izquierda_SPR;
+        x -= caminar_speed;
+        break;
+    case "derecha" :
+        if (image_index == 0) image_index++; 
+        sprite_index = Asesino_Andar_Derecha_SPR;
+        x += caminar_speed;
+        break;   
+    case "parado":
+        sprite_index = Asesino_Quieto_SPR;
+        break;
+    case "muerte":
+        sprite_index = Asesino_Muerte_SPR;
+        if(image_index &lt; 5) {
+            if(!audio_is_playing(grito_asesino)) audio_play_sound(grito_asesino, 10, false);
+        } else if (image_index &gt; 6) {
+            image_speed = 0; // Cuando se acaba la animación de morir la paramos
+        }
+        else 
+            image_speed = 0.3; // Cambiamos la velocidad cuando estamos cayendo muertos
+        break;    
+
+}
+
+if(acuchillar = true) {
+    if(sprite_index != Asesino_Asesinar_SPR)    aux = sprite_index;
+    sprite_index = Asesino_Asesinar_SPR;
+    if(image_index &gt;2) {
+        sprite_index = aux;
+    }    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cuadro Hover - Comprobar si está el jugador cerca
+
+if (mostrar_texto) { // Si estamos a distancia suficiente para mostrar el texto
+    draw_sprite(Texto_HUD_SPR,0,Asesino_OBJ.x,Asesino_OBJ.y-150);
+    draw_set_font(Pistola_Fuente);
+    draw_set_halign(fa_left);
+    draw_set_color(c_white);
+    draw_text(Asesino_OBJ.x+30,Asesino_OBJ.y-150,dialogo);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

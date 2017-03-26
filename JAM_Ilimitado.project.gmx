@@ -68,8 +68,9 @@
     <sprites name="Asesino">
       <sprite>sprites\Asesino_Andar_Izquierda_SPR</sprite>
       <sprite>sprites\Asesino_Andar_Derecha_SPR</sprite>
-      <sprite>sprites\Muerte_Asesino_SPR</sprite>
+      <sprite>sprites\Asesino_Muerte_SPR</sprite>
       <sprite>sprites\Asesino_Asesinar_SPR</sprite>
+      <sprite>sprites\Asesino_Quieto_SPR</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -85,11 +86,6 @@
       <script>scripts\Randal_Parado.gml</script>
       <script>scripts\Randal_Caminando.gml</script>
       <script>scripts\Randal_Muerte.gml</script>
-    </scripts>
-    <scripts name="Estados">
-      <script>scripts\Mover_Derecha.gml</script>
-      <script>scripts\Mover_Izquierda.gml</script>
-      <script>scripts\Parado.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -129,6 +125,7 @@
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_randal</timeline>
+    <timeline>timelines\timeline_asesino</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\Escenario</room>
