@@ -38,7 +38,8 @@ dir = "parado";
 estado = estados_Asesino.caminando;
 dialogo = "prueba";
 mostrar_texto = true;
-caminar_speed = 4;
+muerto = false;
+caminar_speed = 2.5;
 acuchillar = false;
 
 // Timeline
@@ -92,10 +93,11 @@ switch(dir) {
         break;
     case "muerte":
         sprite_index = Asesino_Muerte_SPR;
-        if(image_index &lt; 5) {
+        if(image_index &lt; 3) {
             if(!audio_is_playing(grito_asesino)) audio_play_sound(grito_asesino, 10, false);
-        } else if (image_index &gt; 6) {
+        } else if (image_index &gt; 5) {
             image_speed = 0; // Cuando se acaba la animación de morir la paramos
+            muerto = true;
         }
         else 
             image_speed = 0.3; // Cambiamos la velocidad cuando estamos cayendo muertos
@@ -106,7 +108,7 @@ switch(dir) {
 if(acuchillar = true) {
     if(sprite_index != Asesino_Asesinar_SPR)    aux = sprite_index;
     sprite_index = Asesino_Asesinar_SPR;
-    if(image_index &gt;2) {
+    if(image_index &gt; 1) {
         sprite_index = aux;
         room_restart();
     }    
