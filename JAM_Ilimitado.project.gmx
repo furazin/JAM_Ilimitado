@@ -83,6 +83,7 @@
     </objects>
     <objects name="Items">
       <object>objects\escopeta_OBJ</object>
+      <object>objects\Jabon_OBJ</object>
     </objects>
     <objects name="Escenario">
       <object>objects\Suelo_OBJ</object>
