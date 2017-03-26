@@ -47,6 +47,7 @@
       <sprite>sprites\Calavera_Suelo_SPR</sprite>
       <sprite>sprites\Hierba_Suelo_SPR</sprite>
       <sprite>sprites\LlaveInglesa_Suelo_SPR</sprite>
+      <sprite>sprites\Casa_SPR</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -92,6 +93,7 @@
       <object>objects\Calavera_Suelo_OBJ</object>
       <object>objects\Hierba_Suelo_OBJ</object>
       <object>objects\LlaveInglesa_Suelo_OBJ</object>
+      <object>objects\Casa_OBJ</object>
     </objects>
   </objects>
   <timelines name="timelines">
