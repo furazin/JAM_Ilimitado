@@ -37,6 +37,38 @@ randal = false;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(coger) {
+    coger = false;    
+    y = y + 110;    
+    mostrar_texto = true;
+    audio_play_sound(soltar_objeto, 10, false);
+} else {
+        coger = true;
+        mostrar_texto = false;            
+        audio_play_sound(coger_objeto, 10, false);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -55,8 +87,8 @@ randal = false;
           <argument>
             <kind>1</kind>
             <string>if(coger) {
-    x = Protagonista_OBJ.x + 30;
-    y = Protagonista_OBJ.y - 110;
+    x = Randal_OBJ.x + 30;
+    y = Randal_OBJ.y - 110;
 }
 
 </string>
