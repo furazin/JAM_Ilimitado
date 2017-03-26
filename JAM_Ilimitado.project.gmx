@@ -12,6 +12,8 @@
       <sound>sound\paso4</sound>
       <sound>sound\paso5</sound>
     </sounds>
+    <sound>sound\coger_objeto</sound>
+    <sound>sound\soltar_objeto</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\bloque_azul_SPR</sprite>

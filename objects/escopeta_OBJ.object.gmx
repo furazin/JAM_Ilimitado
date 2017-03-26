@@ -119,10 +119,12 @@ if (distance_to_object(Protagonista_OBJ)&lt;3 and mostrar_texto) { // Si estamos
     coger = false;    
     y = y + 110;    
     mostrar_texto = true;
+    audio_play_sound(soltar_objeto, 10, false);
 } else {
     if (distance_to_object(Protagonista_OBJ)&lt;3) { 
         coger = true;
-        mostrar_texto = false;    
+        mostrar_texto = false;            
+        audio_play_sound(coger_objeto, 10, false);
     }
 }
 </string>
