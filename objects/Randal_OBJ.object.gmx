@@ -124,19 +124,19 @@ if(estado == estados_Randal.caminando and (dir == "derecha" or dir == "izquierda
     if(!audio_is_playing(paso1) and !audio_is_playing(paso2) and!audio_is_playing(paso3) and!audio_is_playing(paso4) and !audio_is_playing(paso5))
     switch(irandom(4)) {
         case 0:
-            audio_play_sound_at(paso1,Randal_OBJ.x,Randal_OBJ.y,0,100,500, 1, false, 2);
+            audio_play_sound_at(paso1,Randal_OBJ.x,Randal_OBJ.y,0,100,500, 3, false, 2);
             break;    
         case 1:
-            audio_play_sound_at(paso2,Randal_OBJ.x,Randal_OBJ.y,0,100,500, 1, false, 2);
+            audio_play_sound_at(paso2,Randal_OBJ.x,Randal_OBJ.y,0,100,500, 3, false, 2);
             break;    
         case 2:
-            audio_play_sound_at(paso3,Randal_OBJ.x,Randal_OBJ.y,0,100,500, 1, false, 2);
+            audio_play_sound_at(paso3,Randal_OBJ.x,Randal_OBJ.y,0,100,500, 3, false, 2);
             break;    
         case 3:
-            audio_play_sound_at(paso4,Randal_OBJ.x,Randal_OBJ.y,0,100,500, 1, false, 2);
+            audio_play_sound_at(paso4,Randal_OBJ.x,Randal_OBJ.y,0,100,500, 3, false, 2);
             break;    
         case 4:
-            audio_play_sound_at(paso5,Randal_OBJ.x,Randal_OBJ.y,0,100,500, 1, false, 2);
+            audio_play_sound_at(paso5,Randal_OBJ.x,Randal_OBJ.y,0,100,500, 3, false, 2);
             break;    
     }
 </string>
