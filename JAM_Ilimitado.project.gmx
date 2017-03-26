@@ -36,6 +36,7 @@
       <sprite>sprites\escopeta_SPR</sprite>
       <sprite>sprites\Fuego_SPR</sprite>
       <sprite>sprites\Jabon_SPR</sprite>
+      <sprite>sprites\Nevera_SPR</sprite>
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\Texto_HUD_SPR</sprite>
@@ -61,6 +62,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\cielo</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -93,6 +95,7 @@
       <object>objects\escopeta_OBJ</object>
       <object>objects\Jabon_OBJ</object>
       <object>objects\Fuego_OBJ</object>
+      <object>objects\Nevera_OBJ</object>
     </objects>
     <objects name="Escenario">
       <object>objects\Suelo_OBJ</object>
@@ -106,8 +109,8 @@
       <object>objects\Hierba_Suelo_OBJ</object>
       <object>objects\LlaveInglesa_Suelo_OBJ</object>
       <object>objects\Casa_OBJ</object>
+      <object>objects\Fuego_OBJ_</object>
     </objects>
-    <object>objects\Fuego_OBJ_</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_randal</timeline>

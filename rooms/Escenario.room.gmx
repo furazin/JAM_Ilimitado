@@ -51,7 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Protagonista_OBJ" x="512" y="992" name="inst_6CDDB8F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Randal_OBJ" x="2144" y="992" name="inst_7B3252C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="escopeta_OBJ" x="1920" y="992" name="inst_449B0287" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Calavera_Suelo_OBJ" x="512" y="1088" name="inst_AE954EBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -78,13 +77,11 @@
     <instance objName="Pared_OBJ" x="160" y="896" name="inst_4F114419" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pared_OBJ" x="160" y="928" name="inst_D0D5277C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pared_OBJ" x="160" y="960" name="inst_93EBBC5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Jabon_OBJ" x="352" y="960" name="inst_B26C8F9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Jabon_OBJ" x="672" y="960" name="inst_B0A1A6E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Protagonista_OBJ" x="448" y="992" name="inst_8C2A3CED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Nevera_OBJ" x="256" y="992" name="inst_1D9EEA04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="cielo" x="96" y="448" w="16" h="16" xo="112" yo="400" id="10000002" name="inst_C3E0A5B4" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="cielo" x="128" y="448" w="16" h="16" xo="112" yo="400" id="10000003" name="inst_04500085" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="cielo" x="256" y="448" w="16" h="16" xo="112" yo="400" id="10000005" name="inst_09D9A332" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="" x="448" y="1056" w="16" h="16" xo="0" yo="0" id="10000006" name="inst_5114C7F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="" x="1856" y="1056" w="16" h="16" xo="0" yo="0" id="10000007" name="inst_2A664EE4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="" x="320" y="1024" w="16" h="16" xo="0" yo="0" id="10000008" name="inst_B26F1301" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
