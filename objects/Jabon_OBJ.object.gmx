@@ -3,7 +3,7 @@
   <spriteName>Jabon_SPR</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1000</depth>
+  <depth>-992</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -30,6 +30,7 @@ coger = false; // Variable que controla si se coge o no la escopeta
 
 mostrar_texto = true;
 
+depth = -1000;
 
 
 

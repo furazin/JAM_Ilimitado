@@ -95,7 +95,7 @@ switch(dir) {
         break;
     case "muerte":
         sprite_index = Randal_Muerte_SPR;
-        if(image_index &lt; 3) {
+        if(image_index &lt; 4) {
             if(!audio_is_playing(grito_randal)) audio_play_sound(grito_randal, 10, false);
         } else if (image_index &gt; 6) {
             muerto = true;
