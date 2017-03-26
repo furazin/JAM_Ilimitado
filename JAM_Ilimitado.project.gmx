@@ -39,6 +39,7 @@
       <sprite>sprites\Protagonista_Quieto_SPR</sprite>
       <sprite>sprites\Protagonista_Andar_Derecha_SPR</sprite>
       <sprite>sprites\Protagonista_Andar_Izquierda_SPR</sprite>
+      <sprite>sprites\Protagonista_Fregar_SPR</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\escopeta_SPR</sprite>
@@ -82,6 +83,7 @@
     <scripts name="Protagonista">
       <script>scripts\Prota_Parado.gml</script>
       <script>scripts\Prota_Caminando.gml</script>
+      <script>scripts\Prota_Fregando.gml</script>
     </scripts>
     <scripts name="Randal">
       <script>scripts\Randal_Parado.gml</script>

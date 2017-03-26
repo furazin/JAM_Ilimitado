@@ -32,9 +32,11 @@ depth = -y;
 // Enumerador en el que a cada valor le asignamos un script
 enum estados_jugador {
     parado = Prota_Parado,
-    caminando = Prota_Caminando
+    caminando = Prota_Caminando,
+    fregando = Prota_Fregando
 }
 
+contador = 0;
 dialogo = "prueba";
 mostrar_texto = true;
 dir = "parado" // Variable de direccion que tiene por defecto "parado"
@@ -48,6 +50,95 @@ estado = estados_jugador.parado // estado por defecto del prota
       </action>
     </event>
     <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>dir</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>"fregando"</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(estado == estados_jugador.fregando and dir=="fregando"){
+    aux = sprite_index;
+    sprite_index = Protagonista_Fregar_SPR;
+    if(contador &gt; 180) {
+        sprite_index = aux;
+        estado = estados_jugador.parado;
+        dir = "parado";
+        coger = false;    
+        Jabon_OBJ.y = 990;    
+        mostrar_texto = true;
+        audio_play_sound(soltar_objeto, 10, false);
+    } else contador++;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -222,6 +313,22 @@ if(estado == estados_jugador.caminando and (dir == "derecha" or dir == "izquierd
       </action>
       <action>
         <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="88">
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -236,14 +343,12 @@ if(estado == estados_jugador.caminando and (dir == "derecha" or dir == "izquierd
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Dialogo
-
-if (mostrar_texto) { 
-    draw_sprite(Texto_HUD_SPR,0,300,900);
-    draw_set_font(Pistola_Fuente);
-    draw_set_halign(fa_left);
-    draw_set_color(c_white);
-    draw_text(330,900,dialogo);
+            <string>if(distance_to_object(Jabon_OBJ) &lt; 8 and Jabon_OBJ.y &lt; Protagonista_OBJ.y){
+    estado = estados_jugador.fregando;
+    dir = "fregando";
+        coger = true;
+        mostrar_texto = false;            
+        audio_play_sound(coger_objeto, 10, false);
 }
 </string>
           </argument>
