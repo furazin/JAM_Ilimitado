@@ -196,19 +196,19 @@ if(estado == estados_jugador.caminando and (dir == "derecha" or dir == "izquierd
     if(!audio_is_playing(paso1) and !audio_is_playing(paso2) and!audio_is_playing(paso3) and!audio_is_playing(paso4) and !audio_is_playing(paso5))
     switch(irandom(4)) {
         case 0:
-            audio_play_sound(paso1, 10, false);
+            audio_play_sound_at(paso1,Protagonista_OBJ.x,Protagonista_OBJ.y,0,100,500, 1, false, 2);
             break;    
         case 1:
-            audio_play_sound(paso2, 10, false);
+            audio_play_sound_at(paso1,Protagonista_OBJ.x,Protagonista_OBJ.y,0,100,500, 1, false, 2);
             break;    
         case 2:
-            audio_play_sound(paso3, 10, false);
+            audio_play_sound_at(paso1,Protagonista_OBJ.x,Protagonista_OBJ.y,0,100,500, 1, false, 2);
             break;    
         case 3:
-            audio_play_sound(paso4, 10, false);
+            audio_play_sound_at(paso1,Protagonista_OBJ.x,Protagonista_OBJ.y,0,100,500, 1, false, 2);
             break;    
         case 4:
-            audio_play_sound(paso5, 10, false);
+            audio_play_sound_at(paso1,Protagonista_OBJ.x,Protagonista_OBJ.y,0,100,500, 1, false, 2);
             break;    
     }
 </string>
