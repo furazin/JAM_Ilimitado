@@ -39,6 +39,7 @@ estado = estados_Randal.caminando;
 dialogo = "prueba";
 mostrar_texto = true;
 caminar_speed = 2;
+muerto = false;
 
 // Timeline
 timeline_index  = timeline_randal;
@@ -97,6 +98,7 @@ switch(dir) {
         if(image_index &lt; 3) {
             if(!audio_is_playing(grito_randal)) audio_play_sound(grito_randal, 10, false);
         } else if (image_index &gt; 6) {
+            muerto = true;
             image_speed = 0; // Cuando se acaba la animación de morir la paramos
         }
         else 
